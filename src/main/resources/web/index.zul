@@ -1,0 +1,36 @@
+<zk>
+    <window hflex="1" vflex="1" viewModel="@id('vm') @init('com.example.jogodamemoria.IndexView')">
+        <box hflex="1" vflex="1" align="center" pack="center">
+            <label value="Jogo da Memória" style="font-size: 50px"/>
+            <hbox>
+                <image src="@load(vm.imagens[0])" onClick="@command('mostrar', ind=0)" />
+                <image src="@load(vm.imagens[1])" onClick="@command('mostrar', ind=1)" />
+                <image src="@load(vm.imagens[2])" onClick="@command('mostrar', ind=2)"  />
+                <image src="@load(vm.imagens[3])" onClick="@command('mostrar', ind=3)" />
+                <image src="@load(vm.imagens[4])" onClick="@command('mostrar', ind=4)"  />
+            </hbox>
+            <hbox>
+                <image src="@load(vm.imagens[5])" onClick="@command('mostrar', ind=5)" />
+                <image src="@load(vm.imagens[6])" onClick="@command('mostrar', ind=6)" />
+                <image src="@load(vm.imagens[7])" onClick="@command('mostrar', ind=7)" />
+                <image src="@load(vm.imagens[8])" onClick="@command('mostrar', ind=8)" />
+                <image src="@load(vm.imagens[9])" onClick="@command('mostrar', ind=9)"  />
+            </hbox>
+            <hbox>
+                <image src="@load(vm.imagens[10])" onClick="@command('mostrar', ind=10)"  />
+                <image src="@load(vm.imagens[11])" onClick="@command('mostrar', ind=11)" />
+                <image src="@load(vm.imagens[12])" onClick="@command('mostrar', ind=12)" />
+                <image src="@load(vm.imagens[13])" onClick="@command('mostrar', ind=13)" />
+                <image src="@load(vm.imagens[14])" onClick="@command('mostrar', ind=14)"  />
+            </hbox>
+            <hbox>
+                <image src="@load(vm.imagens[15])" onClick="@command('mostrar', ind=15)"  />
+                <image src="@load(vm.imagens[16])" onClick="@command('mostrar', ind=16)"  />
+                <image src="@load(vm.imagens[17])" onClick="@command('mostrar', ind=17)"  />
+                <image src="@load(vm.imagens[18])" onClick="@command('mostrar', ind=18)" />
+                <image src="@load(vm.imagens[19])" onClick="@command('mostrar', ind=19)" />
+            </hbox>
+            <button onClick="@command('reiniciar')">Reiniciar</button>
+        </box>
+    </window>
+</zk>
